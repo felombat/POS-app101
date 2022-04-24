@@ -1,0 +1,30 @@
+<div class="page">
+
+
+      <!-- Header and navi -->
+      <ng-include src="'views/navi_menu.html'"> </ng-include>
+
+
+      <div class="page-wrapper">
+        <div class="container-xl">
+          <!-- Page title -->
+          <div class="page-header d-print-none">
+            <div class="row align-items-center">
+              <div class="col">
+                <h2 class="page-title">
+                  {{$ctrl.page.title}}
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-body">
+          <div class="container-xl">
+            <!-- Content here -->
+          </div>
+        </div>
+        
+      </div>
+      <!-- Footer -->
+         <ng-include src="'views/footer.html'"> </ng-include>
+    </div>

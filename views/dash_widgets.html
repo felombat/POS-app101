@@ -25,18 +25,19 @@
               <div class="col-auto ms-auto d-print-none">
                 <div class="btn-list">
                   <span class="d-none d-sm-inline">
-                    <a href="#" class="btn btn-white">
-                      New view
+                    <a href="#!/clients" class="btn btn-white">
+                      Ajouter une Commande
                     </a>
                   </span>
-                  <a href="#" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal-report">
+                  <a href="#!/cashier" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal-report">
                     <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
-                    Create new report   
+                    Ajouter un Client 
                   </a>
                   <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#modal-report" aria-label="Create new report">
                     <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+                    Ajouter un Plat/ Menu 
                   </a>
                 </div>
               </div>
@@ -273,39 +274,7 @@
           </div>
         </div>
 
-
-        <footer class="footer footer-transparent d-print-none">
-          <div class="container-xl">
-            <div class="row text-center align-items-center flex-row-reverse">
-              <div class="col-lg-auto ms-lg-auto">
-                <ul class="list-inline list-inline-dots mb-0">
-                  <li class="list-inline-item"><a href="#" class="link-secondary">Documentation</a></li>
-                  <li class="list-inline-item"><a href="#!/license" class="link-secondary">License</a></li>
-                   <li class="list-inline-item">
-                    <a href="" target="_blank" class="link-secondary" rel="noopener">
-                      <!-- Download SVG icon from http://tabler-icons.io/i/heart -->
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-pink icon-filled icon-inline" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
-                      Credits to : 
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-12 col-lg-auto mt-3 mt-lg-0">
-                <ul class="list-inline list-inline-dots mb-0">
-                  <li class="list-inline-item">
-                    Copyright &copy; 2022
-                    <a href="#" class="link-secondary">Karisma & Co</a>.
-                    All rights reserved.
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#" class="link-secondary" rel="noopener">
-                      v0.0.2-beta
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
+        
       </div>
+      <ng-include src="'views/footer.html'"> </ng-include>
     </div>

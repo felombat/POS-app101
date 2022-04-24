@@ -18,6 +18,8 @@
                 };
                 vm = this;
 
+                this.page = {title : 'CAISSE'};
+
                 // Products
 
                 this.products = [
@@ -26,6 +28,7 @@
                         category_id: 1,
                         unit_price: 500,
                         selected: false,
+                        featured: false,
                         title: "Top Orange"
                              
                     },
@@ -34,6 +37,7 @@
                         category_id: 2,
                         unit_price: 2500,
                         selected: false,
+                        featured: true,
                         title: "Tip Ponch"
                     },
                     {
@@ -41,6 +45,7 @@
                         category_id: 3,
                         unit_price: 3000,
                         selected: false,
+                        featured: false,
                         title: "Heinecken",
                     
                     },
@@ -49,6 +54,7 @@
                         category_id: 3,
                         unit_price: 700,
                         selected: false,
+                        featured: false,
                         title: "33 Export",
                         
                     },
@@ -57,6 +63,7 @@
                         category_id: 3,
                         unit_price: 1000,
                         selected: false,
+                        featured: false,
                         title: "1664",
                     }
                 ]

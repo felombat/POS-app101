@@ -8,10 +8,17 @@
                         template: '<people-list></people-list>'
                     }).
                     when('/dashboard', {
-                        template: '<dashboard-list></dashboard-list>'
+                        template: '<dashboard></dashboard>',
+                        bindings: {
+                            page: '<'
+                        }
+                        
                     }).
                     when('/cashier', {
-                        template: '<cashier-list></cashier-list>'
+                        template: '<cashier-list></cashier-list>',
+                        bindings: {
+                            page: '<'
+                        }
                     }).
                     when('/people/:personId', {
                         template: '<person-detail></person-detail>'
@@ -22,7 +29,7 @@
                     when('/news', {
                         template: '<news-list></news-list>'
                     }).
-                    otherwise('/cashier');
+                    otherwise('/dashboard');
             }
         ]);
 

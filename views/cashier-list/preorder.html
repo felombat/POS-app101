@@ -1,292 +1,338 @@
 
- 
+<div class="page" >
+      <!-- Header and navi -->
+      <ng-include src="'views/navi_menu.html'"> </ng-include>
+      
 
-    <!-- Product  -->
+
+      <div class="page-wrapper">
+        <div class="container-xl">
+          <!-- Page title -->
+          <div class="page-header d-print-none">
+            <div class="row align-items-center">
+              <div class="col">
+                <!-- Page pre-title -->
+                <div class="page-pretitle">
+                  Overview
+                </div>
+                <h2 class="page-title">
+                   <h1>{{ main.page.title  }} </h1>
+                </h2>
+              </div>
+              <!-- Page title actions -->
+              <div class="col-auto ms-auto d-print-none">
+                <div class="btn-list">
+                  <span class="d-none d-sm-inline">
+                    <a href="#" class="btn btn-white">
+                      New view
+                    </a>
+                  </span>
+                  <a href="#" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal-report">
+                    <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+                    Create new report   
+                  </a>
+                  <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#modal-report" aria-label="Create new report">
+                    <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-body">
+
+            <pre>{{ "TITLE : " + $ctrl.page.title  }} </pre>
+
+            <!-- Product  -->
    
-    <!-- Form -->
-    <div class="row row-cards">
-        <div class="card card-md">
-    
-            <div class="card-body">
-                
-            </div>
-        </div>
-    
-    </div>
-    
-    
-
-
-
-
-<div class="row row-cards">
-    <div class="col-md-8">
-        <div class="card">
-            <div class="card-header">
-                <h3 class="card-title">Card with action</h3>
-                <div class="card-actions">
-                    <a href="#" class="btn btn-primary">
-                        <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <line x1="12" y1="5" x2="12" y2="19" />
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                        </svg>
-                        Add a menu item:
-                    </a>
-
-                    
-                </div>
-            </div>
-            <div class="card-body p-0">
-
+            <div class="container-xl">
+                <!-- Form -->
                 <div class="row row-cards">
+                    <div class="card card-md">
                 
-                <!-- catalog item as select option -->
-                    <!-- <div class="col-md-6 col-lg-4">
-                        <div class="card">
-                            <div class="ribbon bg-red">NEW</div>
-                            <div class="card-body">
-                                <h3 class="card-title">Card with text ribbon</h3>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at consectetur
-                                    culpa ducimus eum fuga fugiat, ipsa iusto, modi nostrum recusandae reiciendis saepe.</p>
-                            </div>
-                            <div class="card-footer">
-                                {{order_item.unit_price | currency : "fr&nbsp" : 0}}
-                            </div>
-                        </div>
-                    </div> -->
+                        <div class="card-body">
+                            <p>lorem ipsum</p>
 
-                    <!-- <div class="col-md-6 col-lg-4">
-                        <div class="card">
-                            <div class="ribbon ribbon-top bg-yellow">
-                                 
-                                <svg xmlns="http://www.w3.org/2000/svg" data-icon="http://tabler-icons.io/i/star" class="icon" width="24" height="24" viewBox="0 0 24 24"
-                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path
-                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="card-title">Card with top ribbon</h3>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at consectetur
-                                    culpa ducimus eum fuga fugiat, ipsa iusto, modi nostrum recusandae reiciendis saepe.</p>
-                            </div>
-                            <div class="card-footer">
-                                {{order_item.unit_price | currency : "fr&nbsp" : 0}}
-                            </div>
-                        </div>
-                    </div> -->
-                    
-                    
-                    <div class="col-md-6 col-lg-4" ng-repeat="order_item in $ctrl.products">
-                        <div ng-model="$ctrl.products[$index]" ng-click="$ctrl.addToOrder(order_item)"     ng-class="{'card cursor-not-allowed': order_item.selected } "  ng-class="{'card cursor-poniter': !order_item.selected } ">
-                            <div ng-if="$index % 3 === 1"    ng-class="{'ribbon bg-red cursor-not-allowed' : order_item.selected  } "  >NEW </div>
-                        <div ng-if="$index == 2" class="ribbon ribbon-top bg-yellow" >
-                            <!-- Download SVG icon from http://tabler-icons.io/i/star -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
-                                </path>
-                            </svg>
-                        </div>
-                            <div class="card-body">
-                                <h3 class="card-title"> 
-                                     <span ng-if="order_item.selected" class='badge bg-danger me-1'></span> <span  ng-if="!order_item.selected" class='badge bg-success me-1'></span>
-                                        {{order_item.title}}
-                                     </h3>
-                                <p class="text-muted">Lorem ipsum  suscipit velit vitae voluptatem.</p>
-                            </div>
-                            <div class="card-footer">
-                               {{order_item.unit_price | currency : "fr&nbsp" : 0}}
+                            <div class="btn-list">
+                            <!-- <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-simple">
+                                Simple modal
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-large">
+                                Large modal
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-small">
+                                Small modal
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-full-width">
+                                Full width modal
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-scrollable">
+                                Scrollable modal
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-report">
+                                Modal with form
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-success">
+                                Success modal
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                Danger modal
+                            </a> -->
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-team">
+                                Modal with simple form
+                            </a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- <div class="col-md-6 col-lg-4">
-                        <a href="#" class="card card-link card-link-pop " target="_blank" rel="noreferrer">
-                            <div class="card-body"> Pop hover effect #1</div>
-                        </a>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <a href="#" class="card card-link card-link-pop " target="_blank" rel="noreferrer">
-                            <div class="card-body"> Pop hover effect #2</div>
-                        </a>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <a href="#" class="card card-link card-link-pop " target="_blank" rel="noreferrer">
-                            <div class="card-body"> Pop hover effect #3</div>
-                        </a>
-                    </div> -->
-
-                    
-
-                </div>
-
-
-
-                <!-- List of order items -->
-                <div class="col-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Preorder</h3>
-                    </div>
-                    <div class="card-body border-bottom py-3">
-                        <div class="table-responsive">
-                        <table class="table card-table table-vcenter text-nowrap datatable">
-                            <thead>
-                                <tr>
-                                    <th class="w-1"><input class="form-check-input m-0 align-middle" type="checkbox"
-                                            aria-label="Select all invoices"></th>
-                                    <th class="w-1">No.
-                                        <!-- Download SVG icon from http://tabler-icons.io/i/chevron-up -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm text-dark icon-thick" width="24"
-                                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <polyline points="6 15 12 9 18 15" />
-                                        </svg>
-                                    </th>
-                                    <!-- <th>Invoice Subject</th> -->
-                                    <th>Item</th>
-                                    <th>PU.</th>
-                                    <th>Qty</th>
-            
-                                    <th>Created</th>
-                                    <th>Status</th>
-                                    <th>Total</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr ng-repeat="item in $ctrl.order.items" ng-if="item.quantity">
-                                    <td><input class="form-check-input m-0 align-middle" type="checkbox"
-                                            aria-label="Select invoice"></td>
-                                    <td ng-if="$index==0" rowspan="{{$ctrl.order.items.length}}"><span
-                                            class="text-muted">{{$ctrl.order.table_id}}</span></td>
-                                    <!-- <td><a href="invoice.html" class="text-reset" tabindex="-1">Design Works</a></td> -->
-                                    <td>
-                                        <!-- <span class="flag flag-country-us"></span> -->
-                                        {{item.title}}
-                                    </td>
-                                    <td>
-                                        {{item.unit_price | currency: 'fr&nbsp;'}}
-                                    </td>
-                                    <td ng-click="$ctrl.updateItemQty(item,'inc')"><span class="text-muted">{{item.quantity}}</span>
-                                    </td>
-            
-                                    <td>
-                                        {{ $ctrl.order.date | date : 'dd-mm-yy h:m' }}
-                                    </td>
-                                    <td>
-                                        <span class="badge bg-success me-1"></span> Paid
-                                    </td>
-                                    <td ng-click="$ctrl.updateItemQty(item,'del')">{{item.total_price | currency:
-                                        'fr&nbsp;' }}</td>
-                                    <td class="text-end">
-                                        <span class="dropdown">
-                                            <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport"
-                                                data-bs-toggle="dropdown">Actions</button>
-                                            <div class="dropdown-menu dropdown-menu-end">
-                                                <a class="dropdown-item" href="#">
-                                                    Action
-                                                </a>
-                                                <a class="dropdown-item" href="#">
-                                                    Another action
-                                                </a>
-                                            </div>
-                                        </span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    </div>
-                    
-                </div>
-            
-                <pre>
-                                    {{$ctrl.order | json}}  
-                                </pre>
-            
+                
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">
-                <h3 class="card-title"> Ticket / Facture </h3>
-                <div class="card-actions">
-                    <a href="#" class="btn btn-primary">
-                        <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <line x1="12" y1="5" x2="12" y2="19" />
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                        </svg>
-                        Cloturer
-                    </a>
-                </div>
             </div>
-            <div class="card-body p-0">
-            <div class="table-responsive">
-                <table class="table card-table table-vcenter text-nowrap datatable">
-                    <thead>
-                        <tr>
-                            
-                            <th>Item</th>
-                            <th>PU.</th>
-                            <th>Qty</th>
-            
-                              
-                            <th>Total</th>
-                            
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr ng-repeat="item in $ctrl.order.items">
-                            
-                            <td>
-                                <!-- <span class="flag flag-country-us"></span> -->
-                                {{item.title}}
-                            </td>
-                            <td>
-                                {{item.unit_price | currency: 'fr&nbsp;' : 0}}
-                            </td>
-                            <td ng-click="$ctrl.updateItemQty(item,'inc')"><span class="text-muted">{{item.quantity}}</span>
-                            </td>
-                             
-                            <td ng-click="$ctrl.updateItemQty(item,'del')">{{item.total_price | currency:       'fr&nbsp;'  : 0 }}</td>
-                            
-                        </tr>
-                        <tr>
-                            <td colspan="3" class="right"> Tip</td>
-                            <td> {{$ctrl.getTotal()*0.04 | currency : "fr&nbsp" : 0}}
-                            </td>
-                        </tr>
-                        <tr >
-                            <td colspan="3" class="right"> Total</td>
-                            <td> {{$ctrl.getTotal()| currency : "fr&nbsp": 0}} 
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            </div>
-        </div>
-    </div>
-</div>
     
- 
+                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-report">
+                    Modal with form
+                  </a>
+
+                  <!-- Toasts -->
+                  <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+                    <div id="toastItem1" class="toast hide"    role="alert" aria-live="assertive"  aria-atomic="true" data-bs-autohide="false" data-bs-toggle="toast">
+                      <div class="toast-header">
+                        <span class="avatar avatar-xs me-2" style="background-image: url(...)"></span>
+                        <strong class="me-auto">Mallory Hulme</strong>
+                        <small>11 mins ago</small>
+                        <button type="button" class="ms-2 btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        Hello, world! This is a toast message.
+                      </div>
+                    </div>
+                  </div>
+
+                  <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                          <span class="avatar avatar-sm" style="background-image: url(./static/avatars/003f.jpg)"></span>
+                          <!-- <img src="static/avatars/003f.jpg" class="rounded me-2" alt="Avatar"> -->
+                          <strong class="me-auto p-1">Bootstrap</strong>
+                          <small>11 mins ago</small>
+                          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                          Hello, world! This is a toast message.
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+            <div class="row row-cards">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Nouvelle Commande</h3>
+                            <div class="card-actions">
+                                <a href="#" class="btn btn-primary">
+                                    <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <line x1="12" y1="5" x2="12" y2="19" />
+                                        <line x1="5" y1="12" x2="19" y2="12" />
+                                    </svg>
+                                    Add a menu item:
+                                </a>
+
+                                
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+
+                            <div class="row row-cards">
+                            
+                            <!-- catalog item as select option -->
+                                <div class="col-md-6 col-lg-4" ng-repeat="order_item in $ctrl.products">
+                                    <div class="card" ng-click="$ctrl.addToOrder(order_item)"  
+                                    ng-class="{'card cursor-not-allowed': order_item.selected } "  
+                                    ng-class="{'card cursor-pointer': !order_item.selected }"  >
+
+                                        <div ng-if="order_item.featured"  class="ribbon bg-red" >NEW</div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                <span ng-if="order_item.selected" class='badge bg-danger me-1'></span> 
+                                                <span ng-if="!order_item.selected" class='badge bg-success me-1'></span>
+                                                {{order_item.title}}
+                                            </h3>
+                                            <p class="text-muted">DEsc.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            {{order_item.unit_price | currency : "fr&nbsp" : 0}}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-md-6 col-lg-4">
+                                    <div class="card">
+                                        <div class="ribbon ribbon-top bg-yellow">
+                                            
+                                            <svg xmlns="http://www.w3.org/2000/svg" data-icon="http://tabler-icons.io/i/star" class="icon" width="24" height="24" viewBox="0 0 24 24"
+                                                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <path
+                                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card with top ribbon</h3>
+                                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at consectetur
+                                                culpa ducimus eum fuga fugiat, ipsa iusto, modi nostrum recusandae reiciendis saepe.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            {{order_item.unit_price | currency : "fr&nbsp" : 0}}
+                                        </div>
+                                    </div>
+                                </div> -->
+                                
+                                <hr class=""> 
+                                
+
+                                <!-- <div class="col-md-6 col-lg-4">
+                                    <a href="#" class="card card-link card-link-pop " target="_blank" rel="noreferrer">
+                                        <div class="card-body"> Pop hover effect #1</div>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <a href="#" class="card card-link card-link-pop " target="_blank" rel="noreferrer">
+                                        <div class="card-body"> Pop hover effect #2</div>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <a href="#" class="card card-link card-link-pop " target="_blank" rel="noreferrer">
+                                        <div class="card-body"> Pop hover effect #3</div>
+                                    </a>
+                                </div> -->
+
+                                
+
+                            </div>
+
+
+
+                            <!-- List of order items -->
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title"> Ticket / Facture </h3>
+                            <div class="card-actions">
+                                <a href="#" class="btn btn-primary">
+                                    <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <line x1="12" y1="5" x2="12" y2="19" />
+                                        <line x1="5" y1="12" x2="19" y2="12" />
+                                    </svg>
+                                    Cloturer
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table card-table table-vcenter text-nowrap datatable">
+                                <thead>
+                                    <tr>
+                                        
+                                        <th>Item</th>
+                                        <th>PU.</th>
+                                        <th>Qty</th>
+                        
+                                        
+                                        <th>Total</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="item in $ctrl.order.items">
+                                        
+                                        <td>
+                                            <!-- <span class="flag flag-country-us"></span> -->
+                                            {{item.title}}
+                                        </td>
+                                        <td>
+                                            {{item.unit_price | currency: 'fr&nbsp;' : 0}}
+                                        </td>
+                                        <td ng-click="$ctrl.updateItemQty(item,'inc')"><span class="text-muted">{{item.quantity}}</span>
+                                        </td>
+                                        
+                                        <td ng-click="$ctrl.updateItemQty(item,'del')">{{item.total_price | currency:       'fr&nbsp;'  : 0 }}</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="right"> Tip</td>
+                                        <td> {{$ctrl.getTotal()*0.04 | currency : "fr&nbsp" : 0}}
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td colspan="3" class="right"> Total</td>
+                                        <td> {{$ctrl.getTotal()| currency : "fr&nbsp": 0}} 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+
+
+        <footer class="footer footer-transparent d-print-none">
+          <div class="container-xl">
+            <div class="row text-center align-items-center flex-row-reverse">
+              <div class="col-lg-auto ms-lg-auto">
+                <ul class="list-inline list-inline-dots mb-0">
+                  <li class="list-inline-item"><a href="#" class="link-secondary">Documentation</a></li>
+                  <li class="list-inline-item"><a href="#!/license" class="link-secondary">License</a></li>
+                   <li class="list-inline-item">
+                    <a href="" target="_blank" class="link-secondary" rel="noopener">
+                      <!-- Download SVG icon from http://tabler-icons.io/i/heart -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-pink icon-filled icon-inline" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                      Credits to : 
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                <ul class="list-inline list-inline-dots mb-0">
+                  <li class="list-inline-item">
+                    Copyright &copy; 2022
+                    <a href="#" class="link-secondary">Karisma & Co</a>.
+                    All rights reserved.
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="link-secondary" rel="noopener">
+                      v0.0.2-beta
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>

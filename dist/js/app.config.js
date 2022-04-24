@@ -7,6 +7,20 @@
                     when('/people', {
                         template: '<people-list></people-list>'
                     }).
+                    when('/login', {
+                        template: '<login></login>',
+                        bindings: {
+                            page: '<'
+                        }
+                        
+                    }).
+                    when('/forgotPassword', {
+                        template: '<forgotPassword></forgotPassword>',
+                        bindings: {
+                            page: '<'
+                        }
+                        
+                    }).
                     when('/dashboard', {
                         template: '<dashboard></dashboard>',
                         bindings: {

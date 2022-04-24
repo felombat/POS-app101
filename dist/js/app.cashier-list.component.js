@@ -4,7 +4,7 @@
     angular.
         module('spaApp').
         component('cashierList', {
-            templateUrl: 'views/cashier-list/preorder.html',
+            templateUrl: 'views/cashier-list/preorder2.html',
         
             controller: function CashierListController() {
                 // Interface: reset 
